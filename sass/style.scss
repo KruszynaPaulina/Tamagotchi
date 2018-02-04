@@ -1,0 +1,313 @@
+@charset 'utf-8';
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Modak');
+@import url('https://fonts.googleapis.com/css?family=Mukta+Mahee:700');
+
+$dark--mint: #17706a;
+$dark--pink: #cc2076;
+$light--pink: #d8217e;
+$yellow: #ffd252;
+$font--mukta: 'Mukta Mahee', sans-serif;
+$font--modak: 'Modak', cursive;
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading {
+  text-align: center;
+  font-family: $font--modak;
+  font-size: 30px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  color: $dark--pink;
+  text-transform: uppercase;
+}
+
+.tamagotchi {
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  max-width: 500px;
+  width: 100%;
+  height: 630px;
+  margin: 0 auto;
+  padding-top: 70px;
+  box-sizing: border-box;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #22a39a;
+  box-shadow: 0px 0px 4px 2px $dark--mint;
+}
+
+.screen {
+  height: 280px;
+  background: linear-gradient(to bottom, #ccffff 0%, #33ccff 100%);
+  box-shadow: inset 0px 0px 6px 4px $dark--mint;
+  padding-top: 6px;
+}
+
+.bars {
+  height: auto;
+  padding-left: 8px;
+}
+
+.bar {
+  border: 2px solid $dark--mint;
+  height: 10px;
+  width: 80px;
+  margin: 0 10px 0 2px;
+  display: inline-block;
+  background-color: $dark--pink;
+}
+
+.box-bar {
+  padding: 10px 0;
+}
+
+.box-bar i {
+  color: $dark--pink;
+  font-size: 18px;
+}
+
+.bar__content {
+  height: inherit;
+  width: inherit;
+  background-color: $yellow;
+}
+
+.image {
+  max-width: 180px;
+  margin: 0 auto;
+  position: relative;
+  top: 30px;
+}
+
+.image--pet {
+  width: 100%;
+}
+
+.button--start {
+  margin-bottom: 60px;
+  padding: 20px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  background-color: $dark--pink;
+  border: none;
+  color: $yellow;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0px 0px 4px 3px $dark--mint;
+  font-family: $font--mukta;
+  font-size: 18px;
+}
+
+.button--start:focus, .button:focus {
+	background-color: $light--pink;
+	box-shadow: 0px 0px 4px 1px $dark--mint;
+  outline: 2px solid $dark--mint;
+}
+
+.button {
+	background-color: $dark--pink;
+	border: none;
+	width: 56px;
+	height: 56px;
+	color: $yellow;
+	border-radius: 40px;
+	margin: 20px 5px 10px 5px;
+	box-shadow: 0px 0px 4px 3px $dark--mint;
+}
+
+.button i {
+	font-size: 28px;
+}
+
+.box-bar {
+	display: inline-block;
+}
+
+.sign {
+    color: $yellow;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 11px 0 11px;
+    font-weight: bold;
+    font-family: $font--mukta;
+    font-size: 18px;
+}
+
+@media (min-width: 992px) {
+
+  .button--start:hover, .button:hover {
+    background-color: $light--pink;
+    box-shadow: 0px 0px 4px 1px $dark--mint;
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  .tamagotchi {
+    max-width: 400px;
+    height: 510px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 55px;
+  }
+
+  .screen {
+    height: 230px;
+  }
+
+  .bar {
+    width: 58px;
+    margin: 0 8px 0 2px;
+  }
+
+  .button--start {
+    margin-bottom: 40px;
+    padding: 15px;
+    font-size: 17px;
+  }
+
+  .image {
+    max-width: 150px;
+    top: 20px;
+  }
+
+  .button {
+    width: 46px;
+    height: 46px;
+    margin: 15px 4px 9px 4px;
+  }
+
+  .button i {
+    font-size: 22px;
+  }
+
+  .sign {
+    margin: 0 7px 0 7px;
+    font-size: 16px;
+  }
+
+  .box-bar i {
+    font-size: 17px;
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  .tamagotchi {
+    max-width: 350px;
+    height: 440px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .screen {
+    height: 180px;
+    padding-top: 2px;
+  }
+
+  .bar {
+    height: 9px;
+    width: 50px;
+    margin: 0 5px 0 0;
+  }
+
+  .button--start {
+    padding: 12px;
+  }
+
+  .image {
+    max-width: 110px;
+  }
+
+  .bars {
+    padding-left: 4px;
+  }
+
+  .button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .button i {
+    font-size: 18px;
+  }
+
+  .sign {
+    margin: 0 4px 0 4px;
+  }
+
+}
+
+@media (max-width: 370px) {
+  
+  .tamagotchi {
+    max-width: 280px;
+    height: 360px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 45px;
+  }
+
+  .screen {
+    height: 150px;
+  }
+
+  .bar {
+    height: 8px;
+    width: 39px;
+    margin: 0 3px 0 0;
+  }
+
+  .button--start {
+    margin-bottom: 30px;
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  .image {
+    max-width: 95px;
+    top: 5px;
+  }
+
+  .button {
+    width: 35px;
+    height: 35px;
+    margin: 11px 3px 6px 3px;
+  }
+
+  .button i {
+    font-size: 17px;
+  }
+
+  .box-bar i {
+    font-size: 16px;
+  }
+
+  .sign {
+    margin: 0 3px 0 3px;
+    font-size: 14px;
+  }
+
+}

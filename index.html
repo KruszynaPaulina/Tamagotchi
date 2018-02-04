@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tamagotchi</title>
+		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<main class="main">
+			<div class="container">
+				<header>
+					<h1 class="heading">Tamagotchi</h1>
+				</header>
+				<section class="tamagotchi">
+
+					<button class="button--start" id="button--start" type="button">Start game</button>
+
+					<div class="screen">
+						<div class="bars">
+							<div class="box-bar">
+								<i class="fas fa-utensils"></i>
+								<div class="bar">
+					  				<div class="bar__content" id="bar--hunger"></div>
+					  			</div>
+							</div>
+							<div class="box-bar">
+								<i class="fas fa-heartbeat"></i>
+								<div class="bar">
+					  				<div class="bar__content" id="bar--care"></div>
+								</div>
+							</div>
+							<div class="box-bar">
+								<i class="far fa-futbol"></i>
+								<div class="bar">
+					  				<div class="bar__content" id="bar--fun"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="image">
+							<img class="image--pet" id="image--pet" src="images/petHello.png" alt="Pet"/>
+						</div>
+					</div>
+					
+					<div class="buttons">
+						<button id="button--feed" class="button" type="button"><i class="fas fa-utensils"></i></button>
+						<button id="button--care" class="button" type="button"><i class="fas fa-heartbeat"></i></button>
+						<button id="button--play" class="button" type="button"><i class="far fa-futbol"></i></button>
+					</div>
+					<div class="signs">
+						<span class="sign sign--feed">feed</span>
+						<span class="sign sign--care">care</span>
+						<span class="sign sign--play">play</span>
+					</div>
+
+				</section>
+			</div>
+		</main>
+
+	<script src="js/script.js"></script>
+	</body>
+</html>
